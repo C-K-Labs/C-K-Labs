@@ -108,19 +108,8 @@ principle: "defense in depth. curiosity in excess."
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=C-K-Labs&show_icons=true&hide_border=true&theme=tokyonight&bg_color=1a1b26"/>
-    <img src="https://github-readme-stats.vercel.app/api?username=C-K-Labs&show_icons=true&hide_border=true&bg_color=00000000&title_color=2e7de9&text_color=6172b0&icon_color=007197&ring_color=2e7de9" height="165" alt="GitHub stats"/>
-  </picture>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=C-K-Labs&layout=compact&hide_border=true&theme=tokyonight&bg_color=1a1b26"/>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=C-K-Labs&layout=compact&hide_border=true&bg_color=00000000&title_color=2e7de9&text_color=6172b0" height="165" alt="top languages"/>
-  </picture>
-</div>
-
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=C-K-Labs&hide_border=true&background=1a1b26&ring=7aa2f7&fire=7dcfff&currStreakLabel=7aa2f7&sideLabels=9aa5ce&currStreakNum=c0caf5&sideNums=c0caf5&dates=565f89"/>
-    <img src="https://streak-stats.demolab.com?user=C-K-Labs&hide_border=true&background=ffffff00&ring=2e7de9&fire=007197&currStreakLabel=2e7de9&sideLabels=6172b0&currStreakNum=343b58&sideNums=343b58&dates=848cb5" alt="contribution streak"/>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/telemetry-dark.svg"/>
+    <img src="assets/telemetry-light.svg" width="96%" alt="telemetry: repos, commits, languages, focus domains"/>
   </picture>
 </div>
 
