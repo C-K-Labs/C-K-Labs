@@ -1,17 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 70 900 330" font-family="'Cascadia Code','Fira Code',Consolas,'Courier New',monospace">
   <defs>
     <pattern id="grid2" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#00ff88" stroke-opacity="0.22"/>
+      <path d="M40 0H0V40" fill="none" stroke="#8a5cff" stroke-opacity="0.22"/>
     </pattern>
     <radialGradient id="vig2" cx="0.5" cy="0.5" r="0.75">
-      <stop offset="0" stop-color="#0a0e0a" stop-opacity="0"/>
-      <stop offset="0.6" stop-color="#0a0e0a" stop-opacity="0"/>
-      <stop offset="1" stop-color="#0a0e0a" stop-opacity="0.95"/>
+      <stop offset="0" stop-color="#0b0518" stop-opacity="0"/>
+      <stop offset="0.6" stop-color="#0b0518" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0b0518" stop-opacity="0.95"/>
     </radialGradient>
-    <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00ff88" stop-opacity="0"/>
-      <stop offset="1" stop-color="#00ff88" stop-opacity="0.8"/>
-    </linearGradient>
+    <clipPath id="frame2"><rect x="1" y="71" width="898" height="328" rx="14"/></clipPath>
   </defs>
   <style>
     @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
@@ -20,7 +17,8 @@
     .led{animation:led 1.4s ease-in-out infinite;}
   </style>
 
-  <rect width="900" height="400" fill="#0a0e0a"/>
+  <g clip-path="url(#frame2)">
+  <rect y="70" width="900" height="330" fill="#0b0518"/>
 
   <!-- iso floor grid -->
   <g transform="translate(450,310) scale(1,0.5) rotate(45)" opacity="0.18">
@@ -30,32 +28,32 @@
   <!-- radar sweep under the core -->
   <g transform="translate(450,302)">
     <g transform="scale(1,0.4615)">
-      <circle r="130" fill="none" stroke="#1e3d2c" stroke-dasharray="5 7"/>
-      <circle r="85" fill="none" stroke="#1e3d2c" stroke-dasharray="4 8"/>
+      <circle r="130" fill="none" stroke="#35205a" stroke-dasharray="5 7"/>
+      <circle r="85" fill="none" stroke="#35205a" stroke-dasharray="4 8"/>
       <g>
-        <line x1="0" y1="0" x2="130" y2="0" stroke="#00ff88" stroke-width="2" stroke-opacity=".8"/>
-        <line x1="0" y1="0" x2="127" y2="-27" stroke="#00ff88" stroke-width="2" stroke-opacity=".3"/>
-        <line x1="0" y1="0" x2="120" y2="-52" stroke="#00ff88" stroke-width="2" stroke-opacity=".12"/>
+        <line x1="0" y1="0" x2="130" y2="0" stroke="#00e5ff" stroke-width="2" stroke-opacity=".8"/>
+        <line x1="0" y1="0" x2="127" y2="-27" stroke="#00e5ff" stroke-width="2" stroke-opacity=".3"/>
+        <line x1="0" y1="0" x2="120" y2="-52" stroke="#00e5ff" stroke-width="2" stroke-opacity=".12"/>
         <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="7s" repeatCount="indefinite"/>
       </g>
     </g>
   </g>
 
   <!-- connection: firewall to core -->
-  <path id="p1" d="M300,325 C340,315 380,300 420,290" fill="none" stroke="#1e3d2c" stroke-width="1.5"/>
-  <circle r="3.5" fill="#00ff88">
+  <path id="p1" d="M300,325 C340,315 380,300 420,290" fill="none" stroke="#35205a" stroke-width="1.5"/>
+  <circle r="3.5" fill="#ff2e97">
     <animateMotion dur="2.4s" repeatCount="indefinite"><mpath href="#p1" xlink:href="#p1"/></animateMotion>
   </circle>
-  <circle r="3.5" fill="#00ff88" opacity=".6">
+  <circle r="3.5" fill="#ff2e97" opacity=".6">
     <animateMotion dur="2.4s" begin="1.2s" repeatCount="indefinite"><mpath href="#p1" xlink:href="#p1"/></animateMotion>
   </circle>
 
   <!-- connection: core to rack -->
-  <path id="p2" d="M480,290 C540,285 600,290 655,295" fill="none" stroke="#1e3d2c" stroke-width="1.5"/>
-  <circle r="3.5" fill="#00ccff">
+  <path id="p2" d="M480,290 C540,285 600,290 655,295" fill="none" stroke="#35205a" stroke-width="1.5"/>
+  <circle r="3.5" fill="#00e5ff">
     <animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#p2" xlink:href="#p2"/></animateMotion>
   </circle>
-  <circle r="3.5" fill="#00ccff" opacity=".6">
+  <circle r="3.5" fill="#00e5ff" opacity=".6">
     <animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite"><mpath href="#p2" xlink:href="#p2"/></animateMotion>
   </circle>
 
@@ -75,62 +73,62 @@
   </text>
 
   <!-- firewall: three cubes -->
-  <g stroke="#2fae72" stroke-opacity=".45" stroke-width=".8">
+  <g stroke="#8a5cff" stroke-opacity=".45" stroke-width=".8">
     <g transform="translate(200,295)">
-      <polygon points="0,-28 24,-40 0,-52 -24,-40" fill="#16452c"/>
-      <polygon points="-24,-40 0,-28 0,0 -24,-12" fill="#0a2418"/>
-      <polygon points="0,-28 24,-40 24,-12 0,0" fill="#0f3120"/>
+      <polygon points="0,-28 24,-40 0,-52 -24,-40" fill="#341b5e"/>
+      <polygon points="-24,-40 0,-28 0,0 -24,-12" fill="#180a33"/>
+      <polygon points="0,-28 24,-40 24,-12 0,0" fill="#241147"/>
     </g>
     <g transform="translate(238,314)">
-      <polygon points="0,-28 24,-40 0,-52 -24,-40" fill="#16452c"/>
-      <polygon points="-24,-40 0,-28 0,0 -24,-12" fill="#0a2418"/>
-      <polygon points="0,-28 24,-40 24,-12 0,0" fill="#0f3120"/>
+      <polygon points="0,-28 24,-40 0,-52 -24,-40" fill="#341b5e"/>
+      <polygon points="-24,-40 0,-28 0,0 -24,-12" fill="#180a33"/>
+      <polygon points="0,-28 24,-40 24,-12 0,0" fill="#241147"/>
     </g>
     <g transform="translate(276,333)">
-      <polygon points="0,-28 24,-40 0,-52 -24,-40" fill="#16452c"/>
-      <polygon points="-24,-40 0,-28 0,0 -24,-12" fill="#0a2418"/>
-      <polygon points="0,-28 24,-40 24,-12 0,0" fill="#0f3120"/>
+      <polygon points="0,-28 24,-40 0,-52 -24,-40" fill="#341b5e"/>
+      <polygon points="-24,-40 0,-28 0,0 -24,-12" fill="#180a33"/>
+      <polygon points="0,-28 24,-40 24,-12 0,0" fill="#241147"/>
     </g>
   </g>
-  <text x="238" y="372" font-size="11" fill="#7ee2a8" text-anchor="middle">[ FIREWALL ]</text>
+  <text x="238" y="372" font-size="11" fill="#a794d4" text-anchor="middle">[ FIREWALL ]</text>
 
   <!-- AI core: stacked cubes + pulse rings -->
-  <ellipse cx="450" cy="300" rx="70" ry="32" fill="none" stroke="#00ccff" stroke-width="1.5">
+  <ellipse cx="450" cy="300" rx="70" ry="32" fill="none" stroke="#ff2e97" stroke-width="1.5">
     <animate attributeName="rx" values="55;95" dur="2.5s" repeatCount="indefinite"/>
     <animate attributeName="ry" values="25;44" dur="2.5s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.6;0" dur="2.5s" repeatCount="indefinite"/>
   </ellipse>
-  <ellipse cx="450" cy="300" rx="70" ry="32" fill="none" stroke="#00ccff" stroke-width="1.5">
+  <ellipse cx="450" cy="300" rx="70" ry="32" fill="none" stroke="#ff2e97" stroke-width="1.5">
     <animate attributeName="rx" values="55;95" dur="2.5s" begin="1.25s" repeatCount="indefinite"/>
     <animate attributeName="ry" values="25;44" dur="2.5s" begin="1.25s" repeatCount="indefinite"/>
     <animate attributeName="opacity" values="0.6;0" dur="2.5s" begin="1.25s" repeatCount="indefinite"/>
   </ellipse>
-  <g transform="translate(450,300)" stroke="#2fae72" stroke-opacity=".45" stroke-width=".8">
-    <polygon points="0,-36 46,-59 0,-82 -46,-59" fill="#16452c"/>
-    <polygon points="-46,-59 0,-36 0,0 -46,-23" fill="#0a2418"/>
-    <polygon points="0,-36 46,-59 46,-23 0,0" fill="#0f3120"/>
+  <g transform="translate(450,300)" stroke="#8a5cff" stroke-opacity=".45" stroke-width=".8">
+    <polygon points="0,-36 46,-59 0,-82 -46,-59" fill="#341b5e"/>
+    <polygon points="-46,-59 0,-36 0,0 -46,-23" fill="#180a33"/>
+    <polygon points="0,-36 46,-59 46,-23 0,0" fill="#241147"/>
     <g transform="translate(0,-82)">
-      <polygon points="0,-22 28,-36 0,-50 -28,-36" fill="#1b5a38"/>
-      <polygon points="-28,-36 0,-22 0,0 -28,-14" fill="#0c2c1c"/>
-      <polygon points="0,-22 28,-36 28,-14 0,0" fill="#123a26"/>
+      <polygon points="0,-22 28,-36 0,-50 -28,-36" fill="#45247c"/>
+      <polygon points="-28,-36 0,-22 0,0 -28,-14" fill="#1d0d3d"/>
+      <polygon points="0,-22 28,-36 28,-14 0,0" fill="#2c1554"/>
     </g>
-    <circle cx="0" cy="-100" r="4" fill="#00ccff" stroke="none" class="led"/>
+    <circle cx="0" cy="-100" r="4" fill="#00e5ff" stroke="none" class="led"/>
   </g>
-  <text x="450" y="178" font-size="11" fill="#7ee2a8" text-anchor="middle">[ AI ENGINE ]</text>
+  <text x="450" y="178" font-size="11" fill="#a794d4" text-anchor="middle">[ AI ENGINE ]</text>
 
   <!-- sentinel rack -->
-  <g transform="translate(680,300)" stroke="#2fae72" stroke-opacity=".45" stroke-width=".8">
-    <polygon points="0,-50 30,-65 0,-80 -30,-65" fill="#16452c"/>
-    <polygon points="-30,-65 0,-50 0,0 -30,-15" fill="#0a2418"/>
-    <polygon points="0,-50 30,-65 30,-15 0,0" fill="#0f3120"/>
-    <circle cx="15" cy="-22" r="2.5" fill="#00ff88" stroke="none" class="led" style="animation-delay:.2s"/>
-    <circle cx="15" cy="-32" r="2.5" fill="#00ff88" stroke="none" class="led" style="animation-delay:.6s"/>
-    <circle cx="15" cy="-42" r="2.5" fill="#00ccff" stroke="none" class="led" style="animation-delay:1s"/>
+  <g transform="translate(680,300)" stroke="#8a5cff" stroke-opacity=".45" stroke-width=".8">
+    <polygon points="0,-50 30,-65 0,-80 -30,-65" fill="#341b5e"/>
+    <polygon points="-30,-65 0,-50 0,0 -30,-15" fill="#180a33"/>
+    <polygon points="0,-50 30,-65 30,-15 0,0" fill="#241147"/>
+    <circle cx="15" cy="-22" r="2.5" fill="#ff2e97" stroke="none" class="led" style="animation-delay:.2s"/>
+    <circle cx="15" cy="-32" r="2.5" fill="#ff2e97" stroke="none" class="led" style="animation-delay:.6s"/>
+    <circle cx="15" cy="-42" r="2.5" fill="#00e5ff" stroke="none" class="led" style="animation-delay:1s"/>
   </g>
-  <text x="690" y="340" font-size="11" fill="#7ee2a8" text-anchor="middle">[ SENTINEL-ARC ]</text>
+  <text x="690" y="340" font-size="11" fill="#a794d4" text-anchor="middle">[ SENTINEL-ARC ]</text>
 
   <!-- traffic equalizer -->
-  <g fill="#00ff88" opacity=".8">
+  <g fill="#ff2e97" opacity=".8">
     <rect x="742" y="220" width="5" height="8">
       <animate attributeName="height" values="8;26;12;30;8" dur="1.8s" repeatCount="indefinite"/>
       <animate attributeName="y" values="220;202;216;198;220" dur="1.8s" repeatCount="indefinite"/>
@@ -150,13 +148,15 @@
   </g>
 
   <!-- HUD -->
-  <g font-size="11" fill="#5c9c78">
-    <circle cx="28" cy="96" r="3" fill="#00ff88" class="live"/>
+  <g font-size="11" fill="#7a68a6">
+    <circle cx="28" cy="96" r="3" fill="#ff2e97" class="live"/>
     <text x="38" y="100">[ OPS VIEW :: LIVE ]</text>
     <text x="872" y="100" text-anchor="end">THREAT MONITOR</text>
-    <text x="872" y="384" text-anchor="end" fill="#1d5c3d">24/7 :: AUTONOMOUS DEFENSE</text>
-    <text x="28" y="384" fill="#1d5c3d">render :: isometric.v2</text>
+    <text x="872" y="384" text-anchor="end" fill="#3b2566">24/7 :: AUTONOMOUS DEFENSE</text>
+    <text x="28" y="384" fill="#3b2566">render :: isometric.v3</text>
   </g>
 
-  <rect width="900" height="400" fill="url(#vig2)" pointer-events="none"/>
+  <rect y="70" width="900" height="330" fill="url(#vig2)" pointer-events="none"/>
+  </g>
+  <rect x="1" y="71" width="898" height="328" rx="14" fill="none" stroke="#35205a" stroke-width="1.5"/>
 </svg>
