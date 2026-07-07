@@ -105,3 +105,4 @@ principle: "defense in depth. curiosity in excess."
 <div align="center">
   <sub><code>[ EOF ] :: thanks for scrolling. connections welcome.</code></sub>
 </div>
+
