@@ -1,9 +1,12 @@
 <div align="center">
-  <img src="assets/hero.svg" width="100%" alt="C-K-Labs :: security research, AI x ML security"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"/>
+    <img src="assets/hero-light.svg" width="100%" alt="C-K-Labs :: security research, AI x ML security"/>
+  </picture>
 </div>
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=C-K-Labs&color=ff2e97&style=flat-square&label=visitors" alt="visitor count"/>
+  <img src="https://komarev.com/ghpvc/?username=C-K-Labs&color=7aa2f7&style=flat-square&label=visitors" alt="visitor count"/>
 </div>
 
 <br/>
@@ -26,7 +29,10 @@ principle: "defense in depth. curiosity in excess."
 ```
 
 <div align="center">
-  <img src="assets/terminal.svg" width="92%" alt="terminal session"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg"/>
+    <img src="assets/terminal-light.svg" width="92%" alt="terminal session"/>
+  </picture>
 </div>
 
 <br/>
@@ -37,31 +43,46 @@ principle: "defense in depth. curiosity in excess."
   <tr>
     <td width="50%">
       <a href="https://github.com/C-K-Labs/MercySTEM-SentinelArc">
-        <img src="assets/card-sentinelarc.svg" width="100%" alt="SentinelArc: LAN DDoS detection platform"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/card-sentinelarc-dark.svg"/>
+          <img src="assets/card-sentinelarc-light.svg" width="100%" alt="SentinelArc: LAN DDoS detection platform"/>
+        </picture>
       </a>
     </td>
     <td width="50%">
       <a href="https://github.com/C-K-Labs/Mercy-Hackathon-CCCAlert">
-        <img src="assets/card-cccalert.svg" width="100%" alt="CCC-Alert: AI campus safety system"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/card-cccalert-dark.svg"/>
+          <img src="assets/card-cccalert-light.svg" width="100%" alt="CCC-Alert: AI campus safety system"/>
+        </picture>
       </a>
     </td>
   </tr>
   <tr>
     <td width="50%">
       <a href="https://github.com/C-K-Labs/pentest-ai-suite">
-        <img src="assets/card-pentest.svg" width="100%" alt="pentest-ai-suite: local AI pentest assistant"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/card-pentest-dark.svg"/>
+          <img src="assets/card-pentest-light.svg" width="100%" alt="pentest-ai-suite: local AI pentest assistant"/>
+        </picture>
       </a>
     </td>
     <td width="50%">
       <a href="https://github.com/C-K-Labs/ai-code-security-review">
-        <img src="assets/card-aicsr.svg" width="100%" alt="ai-code-security-review: manual review vs SAST study"/>
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/card-aicsr-dark.svg"/>
+          <img src="assets/card-aicsr-light.svg" width="100%" alt="ai-code-security-review: manual review vs SAST study"/>
+        </picture>
       </a>
     </td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="assets/ops-scene.svg" width="100%" alt="isometric network defense scene"/>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/ops-scene-dark.svg"/>
+    <img src="assets/ops-scene-light.svg" width="100%" alt="isometric network defense scene"/>
+  </picture>
 </div>
 
 <br/>
@@ -69,16 +90,16 @@ principle: "defense in depth. curiosity in excess."
 ## &gt; cat ./arsenal
 
 <div align="center">
-  <img src="https://img.shields.io/badge/Python-120826?style=for-the-badge&logo=python&logoColor=ff2e97" alt="Python"/>
-  <img src="https://img.shields.io/badge/C++-120826?style=for-the-badge&logo=cplusplus&logoColor=ff2e97" alt="C++"/>
-  <img src="https://img.shields.io/badge/JavaScript-120826?style=for-the-badge&logo=javascript&logoColor=ff2e97" alt="JavaScript"/>
-  <img src="https://img.shields.io/badge/HTML5-120826?style=for-the-badge&logo=html5&logoColor=ff2e97" alt="HTML5"/>
-  <img src="https://img.shields.io/badge/Jupyter-120826?style=for-the-badge&logo=jupyter&logoColor=ff2e97" alt="Jupyter"/>
+  <img src="https://img.shields.io/badge/Python-1f2335?style=for-the-badge&logo=python&logoColor=7aa2f7" alt="Python"/>
+  <img src="https://img.shields.io/badge/C++-1f2335?style=for-the-badge&logo=cplusplus&logoColor=7aa2f7" alt="C++"/>
+  <img src="https://img.shields.io/badge/JavaScript-1f2335?style=for-the-badge&logo=javascript&logoColor=7aa2f7" alt="JavaScript"/>
+  <img src="https://img.shields.io/badge/HTML5-1f2335?style=for-the-badge&logo=html5&logoColor=7aa2f7" alt="HTML5"/>
+  <img src="https://img.shields.io/badge/Jupyter-1f2335?style=for-the-badge&logo=jupyter&logoColor=7aa2f7" alt="Jupyter"/>
   <br/>
-  <img src="https://img.shields.io/badge/DDoS_DEFENSE-120826?style=flat-square" alt="DDoS defense"/>
-  <img src="https://img.shields.io/badge/AI_SECURITY-120826?style=flat-square" alt="AI security"/>
-  <img src="https://img.shields.io/badge/SECURE_CODE_REVIEW-120826?style=flat-square" alt="secure code review"/>
-  <img src="https://img.shields.io/badge/PENTEST_TOOLING-120826?style=flat-square" alt="pentest tooling"/>
+  <img src="https://img.shields.io/badge/DDoS_DEFENSE-1f2335?style=flat-square" alt="DDoS defense"/>
+  <img src="https://img.shields.io/badge/AI_SECURITY-1f2335?style=flat-square" alt="AI security"/>
+  <img src="https://img.shields.io/badge/SECURE_CODE_REVIEW-1f2335?style=flat-square" alt="secure code review"/>
+  <img src="https://img.shields.io/badge/PENTEST_TOOLING-1f2335?style=flat-square" alt="pentest tooling"/>
 </div>
 
 <br/>
@@ -87,19 +108,19 @@ principle: "defense in depth. curiosity in excess."
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=C-K-Labs&show_icons=true&hide_border=true&bg_color=0b0518&title_color=ff2e97&text_color=a794d4&icon_color=00e5ff&ring_color=ff2e97"/>
-    <img src="https://github-readme-stats.vercel.app/api?username=C-K-Labs&show_icons=true&hide_border=true&bg_color=00000000&title_color=d81b60&text_color=57468b&icon_color=0d7ec2&ring_color=d81b60" height="165" alt="GitHub stats"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=C-K-Labs&show_icons=true&hide_border=true&theme=tokyonight&bg_color=1a1b26"/>
+    <img src="https://github-readme-stats.vercel.app/api?username=C-K-Labs&show_icons=true&hide_border=true&bg_color=00000000&title_color=2e7de9&text_color=6172b0&icon_color=007197&ring_color=2e7de9" height="165" alt="GitHub stats"/>
   </picture>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=C-K-Labs&layout=compact&hide_border=true&bg_color=0b0518&title_color=ff2e97&text_color=a794d4"/>
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=C-K-Labs&layout=compact&hide_border=true&bg_color=00000000&title_color=d81b60&text_color=57468b" height="165" alt="top languages"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=C-K-Labs&layout=compact&hide_border=true&theme=tokyonight&bg_color=1a1b26"/>
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=C-K-Labs&layout=compact&hide_border=true&bg_color=00000000&title_color=2e7de9&text_color=6172b0" height="165" alt="top languages"/>
   </picture>
 </div>
 
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=C-K-Labs&hide_border=true&background=0b0518&ring=ff2e97&fire=00e5ff&currStreakLabel=ff2e97&sideLabels=a794d4&currStreakNum=f3e8ff&sideNums=f3e8ff&dates=6a5a92"/>
-    <img src="https://streak-stats.demolab.com?user=C-K-Labs&hide_border=true&background=ffffff00&ring=d81b60&fire=8a3fd6&currStreakLabel=d81b60&sideLabels=57468b&currStreakNum=1f1235&sideNums=1f1235&dates=8a7ab0" alt="contribution streak"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=C-K-Labs&hide_border=true&background=1a1b26&ring=7aa2f7&fire=7dcfff&currStreakLabel=7aa2f7&sideLabels=9aa5ce&currStreakNum=c0caf5&sideNums=c0caf5&dates=565f89"/>
+    <img src="https://streak-stats.demolab.com?user=C-K-Labs&hide_border=true&background=ffffff00&ring=2e7de9&fire=007197&currStreakLabel=2e7de9&sideLabels=6172b0&currStreakNum=343b58&sideNums=343b58&dates=848cb5" alt="contribution streak"/>
   </picture>
 </div>
 

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 380" font-family="'Cascadia Code','Fira Code',Consolas,'Courier New',monospace" font-size="15">
+  <defs>
+    <pattern id="crt" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1" fill="#2e7de9" fill-opacity="0.05"/>
+    </pattern>
+    <linearGradient id="barG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2e7de9"/>
+      <stop offset="1" stop-color="#007197"/>
+    </linearGradient>
+    <mask id="m1"><rect x="34" y="52" width="76"  height="22" fill="#fff" style="transform-origin:34px 0;animation:type .6s  steps(8)  .5s  both"/></mask>
+    <mask id="m2"><rect x="34" y="104" width="139" height="22" fill="#fff" style="transform-origin:34px 0;animation:type .9s  steps(15) 2.0s both"/></mask>
+    <mask id="m3"><rect x="34" y="156" width="229" height="22" fill="#fff" style="transform-origin:34px 0;animation:type 1.3s steps(25) 3.9s both"/></mask>
+    <mask id="m4"><rect x="34" y="252" width="355" height="22" fill="#fff" style="transform-origin:34px 0;animation:type 1.6s steps(39) 6.8s both"/></mask>
+  </defs>
+  <style>
+    @keyframes type{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    @keyframes fin{to{opacity:1}}
+    @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
+    @keyframes fill{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+    .o{opacity:0;animation:fin .25s ease-out forwards;}
+    .cursor{opacity:0;animation:fin .05s linear 11.2s forwards, blink 1.1s steps(1) 11.3s infinite;}
+    .live{animation:blink 1.6s steps(1) infinite;}
+  </style>
+
+  <rect x="0.5" y="0.5" width="899" height="379" rx="12" fill="#fbfcfe" stroke="#c4cbe1"/>
+  <path d="M12.5 0.5 H887.5 A12 12 0 0 1 899.5 12.5 V36 H0.5 V12.5 A12 12 0 0 1 12.5 0.5 Z" fill="#e6e9f5"/>
+  <line x1="0.5" y1="36" x2="899.5" y2="36" stroke="#c4cbe1"/>
+  <circle cx="24" cy="18.5" r="6" fill="#ff5f56"/>
+  <circle cx="44" cy="18.5" r="6" fill="#ffbd2e"/>
+  <circle cx="64" cy="18.5" r="6" fill="#27c93f"/>
+  <text x="450" y="23" text-anchor="middle" font-size="12" fill="#6172b0">ck@labs: ~/security</text>
+  <circle cx="856" cy="18.5" r="3.5" fill="#f52a65" class="live"/>
+  <text x="866" y="23" font-size="11" fill="#848cb5">LIVE</text>
+
+  <rect x="1" y="37" width="898" height="342" fill="url(#crt)"/>
+
+  <g mask="url(#m1)">
+    <text x="34" y="68"><tspan fill="#2e7de9">$</tspan><tspan fill="#343b58" xml:space="preserve"> whoami</tspan></text>
+  </g>
+  <text x="34" y="90" fill="#6172b0" class="o" style="animation-delay:1.3s">ck-labs :: security researcher [ ai x ml security ]</text>
+
+  <g mask="url(#m2)">
+    <text x="34" y="120"><tspan fill="#2e7de9">$</tspan><tspan fill="#343b58" xml:space="preserve"> ls ~/projects</tspan></text>
+  </g>
+  <text x="34" y="142" fill="#007197" class="o" style="animation-delay:3.1s" xml:space="preserve">sentinel-arc/    ccc-alert/    pentest-ai-suite/    ai-code-review/</text>
+
+  <g mask="url(#m3)">
+    <text x="34" y="172"><tspan fill="#2e7de9">$</tspan><tspan fill="#343b58" xml:space="preserve"> ./sentinel-arc --status</tspan></text>
+  </g>
+  <text x="34" y="194" class="o" style="animation-delay:5.4s"><tspan fill="#587539">[ OK ]</tspan><tspan fill="#6172b0" xml:space="preserve"> packet scoring engine ......... </tspan><tspan fill="#007197">online</tspan></text>
+  <text x="34" y="216" class="o" style="animation-delay:5.7s"><tspan fill="#587539">[ OK ]</tspan><tspan fill="#6172b0" xml:space="preserve"> firewall integration .......... </tspan><tspan fill="#007197">active</tspan></text>
+  <text x="34" y="238" class="o" style="animation-delay:6.0s"><tspan fill="#587539">[ OK ]</tspan><tspan fill="#6172b0" xml:space="preserve"> operator dashboard ............ </tspan><tspan fill="#007197">live</tspan></text>
+
+  <g mask="url(#m4)">
+    <text x="34" y="268"><tspan fill="#2e7de9">$</tspan><tspan fill="#343b58" xml:space="preserve"> ./analyze --target ai-generated-code</tspan></text>
+  </g>
+  <g class="o" style="animation-delay:8.6s">
+    <text x="34" y="290" fill="#6172b0">scanning</text>
+    <rect x="118" y="278" width="182" height="13" fill="none" stroke="#c4cbe1"/>
+    <rect x="120" y="280" width="178" height="9" fill="url(#barG)" style="transform-origin:120px 0;animation:fill 1.6s steps(20) 8.7s both"/>
+  </g>
+  <text x="312" y="290" fill="#007197" class="o" style="animation-delay:10.3s">100%</text>
+  <text x="34" y="312" class="o" style="animation-delay:10.6s"><tspan fill="#2e7de9">&gt;</tspan><tspan fill="#343b58" xml:space="preserve"> verdict: manual review catches what scanners miss</tspan></text>
+
+  <text x="34" y="344" fill="#2e7de9" class="o" style="animation-delay:11.2s">$</text>
+  <rect x="50" y="331" width="9" height="16" fill="#007197" class="cursor"/>
+</svg>
